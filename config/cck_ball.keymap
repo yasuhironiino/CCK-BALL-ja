@@ -55,15 +55,15 @@
 
         QWERTY {
             bindings = <
-&kp ESC           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none      &kp BACKSLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH   &kp LS(DELETE)
-&kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T         &kp Y      &kp U          &kp I           &kp O            &kp P           &kp BACKSPACE
-&kp CAPSLOCK      &kp A         &lt 4 S       &kp D         &lt 3 F       &kp G         &kp H      &kp J          &kp K           &kp L            &kp SEMI        &kp SQT
-&kp LEFT_SHIFT    &kp Z         &kp X         &kp C         &kp V         &kp B         &kp N      &kp M          &kp COMMA       &kp DOT          &kp UP_ARROW    &kp RIGHT_SHIFT
-&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp DELETE    &kp SPACE     &to 1         &kp ENTER  &mkp MB1       &mkp MB2        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW
+&kp ESC           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &none      &kp SLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH   &kp LS(DELETE)
+&kp TAB           &kp Q         &kp W         &kp E         &kp R         &kp T         &kp Y      &kp U      &kp I           &kp O            &kp P           &kp BACKSPACE
+&kp CAPSLOCK      &kp A         &kp S         &kp D         &kp F         &kp G         &kp H      &kp J      &kp K           &kp L            &kp SEMI        &kp SQT
+&kp LEFT_SHIFT    &kp Z         &kp X         &kp C         &kp V         &kp B         &kp N      &kp M      &kp COMMA       &kp DOT          &kp UP_ARROW    &kp RIGHT_SHIFT
+&kp LEFT_CONTROL  &kp LEFT_WIN  &kp LEFT_ALT  &kp DELETE    &kp SPACE     &to 1         &kp ENTER  &mkp MB1   &mkp MB2        &kp LEFT_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW
             >;
 
             sensor-bindings =
-                <&inc_dec_kp C_VOL_UP C_VOL_DN>,
+                <&scroll_horizontal_encoder>,
                 <&scroll_vertical_encoder>;
         };
 
@@ -71,8 +71,8 @@
             bindings = <
 &kp F1  &kp F2      &kp F3           &kp F4           &kp F5           &kp F6           &kp F7        &kp F8        &kp F9        &kp F10       &kp F11       &kp F12
 &trans  &kp SLASH   &kp ASTERISK     &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans
-&trans  &kp MINUS   &kp PLUS         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
-&trans  &kp KP_DOT  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none         &none         &trans        &trans        &trans        &trans
+&trans  &kp MINUS   &kp PLUS         &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &none
+&trans  &kp KP_DOT  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none         &none         &none         &none         &trans        &trans
 &trans  &trans      &trans           &trans           &trans           &to 0            &trans        &trans        &trans        &trans        &trans        &trans
             >;
 
@@ -116,7 +116,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,,,,
+                // 编码器1：上下滚动,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
