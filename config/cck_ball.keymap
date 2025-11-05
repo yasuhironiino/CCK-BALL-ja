@@ -69,11 +69,11 @@
 
         F_layers {
             bindings = <
-&kp F12  &kp F1      &kp F2           &kp F3           &kp F4           &kp F5           &kp F6     &kp F7     &kp F8  &kp F9  &kp F10  &kp F11
-&trans   &none       &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &none      &none      &none   &trans  &trans   &trans
-&trans   &none       &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &mkp LCLK  &mkp RCLK  &trans  &trans  &trans   &trans
-&trans   &kp KP_DOT  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none      &none      &trans  &trans  &trans   &trans
-&trans   &trans      &trans           &trans           &trans           &trans           &trans     &trans     &trans  &trans  &trans   &trans
+&kp F12  &kp F1      &kp F2           &kp F3           &kp F4           &kp F5           &kp F6        &kp F7        &kp F8        &kp F9        &kp F10       &kp F11
+&trans   &kp HOME    &none            &kp KP_NUMBER_7  &kp KP_NUMBER_8  &kp KP_NUMBER_9  &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5  &trans
+&trans   &none       &none            &kp KP_NUMBER_4  &kp KP_NUMBER_5  &kp KP_NUMBER_6  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0  &trans
+&trans   &kp KP_DOT  &kp KP_NUMBER_0  &kp KP_NUMBER_1  &kp KP_NUMBER_2  &kp KP_NUMBER_3  &none         &none         &trans        &trans        &trans        &trans
+&trans   &trans      &trans           &trans           &trans           &trans           &trans        &trans        &trans        &trans        &trans        &trans
             >;
 
             sensor-bindings =
@@ -116,7 +116,7 @@
 
             sensor-bindings =
                 <&scroll_vertical_encoder>,
-                // 编码器1：上下滚动,,,,,,
+                // 编码器1：上下滚动,,,,,,,
                 <&scroll_horizontal_encoder>;
 
             // 编码器2：左右滚动
