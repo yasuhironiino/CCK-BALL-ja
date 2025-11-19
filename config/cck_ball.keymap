@@ -43,7 +43,6 @@
         compatible = "zmk,behavior-sensor-rotate";
         #sensor-binding-cells = <0>;
         bindings = <&msc SCRL_LEFT>, <&msc SCRL_RIGHT>;
-
         tap-ms = <100>;
     };
 
@@ -148,8 +147,7 @@
                 <&scroll_vertical_encoder>,
                 // エンコーダ1：上下スクロール,,,,,,,,,,,
                 <&scroll_horizontal_encoder>;
-
-            // エンコーダ2：左右スクロール
+                // エンコーダ2：左右スクロール
         };
     };
 };
