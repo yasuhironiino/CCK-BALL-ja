@@ -53,6 +53,10 @@
     keymap {
         compatible = "zmk,keymap";
 
+         default_layer {
+            bindings = <
+                &mmv_speed_cycle   //
+
         QWERTY {
             bindings = <
 &kp ESC           &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &kp ENTER  &kp SLASH  &kp LEFT_BRACE  &kp RIGHT_BRACE  &kp BACKSLASH   &kp LS(DELETE)
