@@ -46,7 +46,7 @@
         tap-ms = <100>;
     };
 
-  / {
+/ {
     behaviors {
         dpi_toggle: dpi_toggle {
             compatible = "zmk,behavior-mod-morph";
@@ -56,7 +56,7 @@
                 &macro_set_fast
                 &macro_set_slow
             >;
-        };
+     };
 
         macro_set_fast: macro_set_fast {
             compatible = "zmk,behavior-macro";
@@ -66,7 +66,7 @@
             bindings = <
                 &mmv_set_params 1000 500 1
             >;
-        };
+     };
 
         macro_set_slow: macro_set_slow {
             compatible = "zmk,behavior-macro";
@@ -76,8 +76,8 @@
             bindings = <
                 &mmv_set_params 400 500 1
             >;
-        };
-    };
+      };
+  };
 
     keymap {
         QWERTY {
